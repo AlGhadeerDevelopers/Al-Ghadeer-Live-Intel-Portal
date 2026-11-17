@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate" />
+  <title>Al Ghadeer Universal Intelligence Portal — Pakistan Sarkari/Neem-Sarkari, Schemes, Vaccines &amp; Global Visas</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <!-- FontAwesome 6 Vector Icons (Zero Emojis) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              emerald: '#034726',
+              emeraldLight: '#065f34',
+              emeraldDark: '#022c17',
+              gold: '#D4AF37',
+              goldLight: '#e6c65a',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+    .ltr-num {
+      direction: ltr;
+      unicode-bidi: isolate;
+    }
+    .card-hover {
+      transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-2px);
+    }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    .dark ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    .dark ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-200">
+
+  <!-- Top Corporate Header -->
+  <header class="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-3">
+      <button type="button" id="brandHomeBtn" class="flex items-center gap-3 text-left focus:outline-none">
+        <div class="w-10 h-10 rounded-xl bg-brand-emerald flex items-center justify-center border border-brand-gold/60 shadow-sm shrink-0">
+          <i class="fa-solid fa-globe text-brand-gold text-lg"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-base sm:text-lg tracking-tight text-slate-900 dark:text-white">Al Ghadeer <span class="text-brand-emerald dark:text-brand-gold">Live Intel</span></span>
+            <span class="hidden md:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 text-brand-emerald dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+              Zero-Skip Live Engine
+            </span>
+          </div>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">AL GHADEER DIGITAL SERVICES (SMC-PRIVATE) LIMITED</p>
+        </div>
+      </button>
+
+      <!-- Live PKR Forex Ticker & Controls -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div id="liveForexBadge" class="hidden lg:flex items-center gap-3 px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-mono ltr-num" dir="ltr">
+          <span class="text-slate-500 dark:text-slate-400 font-sans font-bold"><i class="fa-solid fa-coins text-brand-gold mr-1"></i>Live Forex:</span>
+          <span id="fxUsd">USD: ...</span>
+          <span class="text-slate-300 dark:text-slate-600">|</span>
+          <span id="fxSar">SAR: ...</span>
+          <span class="text-slate-300 dark:text-slate-600">|</span>
+          <span id="fxEur">EUR: ...</span>
+          <span class="text-slate-300 dark:text-slate-600">|</span>
+          <span id="fxGbp">GBP: ...</span>
+        </div>
+
+        <button type="button" id="openAdminModalBtn" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold bg-amber-50 hover:bg-amber-100 text-amber-900 dark:bg-amber-950/70 dark:text-amber-300 border border-amber-200 dark:border-amber-800 transition-colors">
+          <i class="fa-solid fa-plus-circle"></i>
+          <span class="hidden sm:inline">Add Custom Rule / Alert</span>
+        </button>
+
+        <button type="button" id="themeToggleBtn" class="w-9 h-9 rounded-xl flex items-center justify-center bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 transition-colors" title="Toggle Dark Mode">
+          <i id="themeIcon" class="fa-solid fa-moon text-sm"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Workspace -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-7">
+
+    <!-- ==================== HERO UNIVERSAL SEARCH ENGINE ==================== -->
+    <section class="relative rounded-2xl bg-gradient-to-br from-brand-emeraldDark via-brand-emerald to-emerald-900 text-white p-6 sm:p-9 shadow-lg border border-brand-gold/30">
+      <div class="max-w-4xl space-y-4">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-brand-gold/40 text-brand-gold text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-satellite-dish"></i>
+            Pakistan Sarkari / Neem-Sarkari + 195 Countries Live Search
+          </span>
+          <span class="text-xs text-emerald-100/80 font-mono ltr-num" dir="ltr">
+            Session Queries Run: <strong id="statQueriesCount" class="text-white">0</strong>
+          </span>
+        </div>
+
+        <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight leading-tight">
+          Search <span class="text-brand-gold">Any Department, Scheme, Vaccine, Job, License, or Country Visa</span> — Live &amp; Unskipped.
+        </h1>
+        <p class="text-xs sm:text-sm text-emerald-100/90 leading-relaxed max-w-3xl">
+          Combines our verified Pakistan &amp; Global Master Registry with <strong>Live Google News RSS Feeds</strong>, <strong>Wikipedia/Wikidata Live Synthesis</strong>, <strong>195+ Countries &amp; Forex APIs</strong>, and <strong>100,000+ Global Universities (OpenAlex API)</strong> so no department or rule is ever missed.
+        </p>
+
+        <!-- Universal Search Bar -->
+        <form id="universalSearchForm" class="pt-2 flex flex-col sm:flex-row gap-2.5">
+          <div class="relative flex-1">
+            <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+            <input
+              type="text"
+              id="universalSearchInput"
+              placeholder="Type ANYTHING: e.g. NIMS Polio Vaccine, EOBI, WWF Shadi Grant, MEPCO, PSW, OEC Korea, Italy Visa, PAEC, Yellow Fever..."
+              class="w-full pl-11 pr-10 py-3.5 rounded-xl bg-white text-slate-900 placeholder-slate-400 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-brand-gold shadow-sm"
+            />
+            <button type="button" id="clearQueryBtn" class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 p-1">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <button type="submit" id="runLiveSearchBtn" class="px-6 py-3.5 rounded-xl bg-brand-gold hover:bg-brand-goldLight text-slate-950 font-extrabold text-xs sm:text-sm tracking-wide shadow-sm flex items-center justify-center gap-2 shrink-0 transition-colors">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Fetch Live Intelligence</span>
+          </button>
+        </form>
+
+        <!-- Quick Test Chips (Showing Variety: Vaccines, Welfare, Utilities, Tenders, Visas) -->
+        <div class="pt-1 flex flex-wrap items-center gap-1.5">
+          <span class="text-[11px] font-bold text-emerald-200 mr-1"><i class="fa-solid fa-wand-magic-sparkles mr-1"></i>Try Instant Live Queries:</span>
+          <button type="button" data-quick-query="NIMS Polio Vaccine" class="quick-q-chip px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white text-[11px] font-semibold border border-white/15 transition-colors">NIMS Polio &amp; Travel Vaccine</button>
+          <button type="button" data-quick-query="WWF Workers Welfare Grant" class="quick-q-chip px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white text-[11px] font-semibold border border-white/15 transition-colors">WWF Shadi / Death Grant</button>
+          <button type="button" data-quick-query="EOBI Pension" class="quick-q-chip px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white text-[11px] font-semibold border border-white/15 transition-colors">EOBI Old-Age Pension</button>
+          <button type="button" data-quick-query="MEPCO New Meter" class="quick-q-chip px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white text-[11px] font-semibold border border-white/15 transition-colors">MEPCO / WAPDA Connection</button>
+          <button type="button" data-quick-query="OEC Korea Japan Jobs" class="quick-q-chip px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white text-[11px] font-semibold border border-white/15 transition-colors">OEC Govt Jobs Abroad</button>
+          <button type="button" data-quick-query="BEOE Protector Stamp" class="quick-q-chip px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white text-[11px] font-semibold border border-white/15 transition-colors">BEOE Protector Stamp</button>
+          <button type="button" data-quick-query="EPADS PPRA Tenders" class="quick-q-chip px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white text-[11px] font-semibold border border-white/15 transition-colors">EPADS Govt e-Tenders</button>
+          <button type="button" data-quick-query="Germany" class="quick-q-chip px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white text-[11px] font-semibold border border-white/15 transition-colors">Germany Visa &amp; Universities</button>
+          <button type="button" data-quick-query="Saudi Arabia" class="quick-q-chip px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white text-[11px] font-semibold border border-white/15 transition-colors">Saudi Work / Umrah / GAMCA</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LIVE DEEP-INTELLIGENCE REPORT PANEL (SHOWN ON ANY SEARCH) ==================== -->
+    <section id="liveReportSection" class="hidden space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-3 bg-white dark:bg-slate-900 px-5 py-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-brand-emerald text-brand-gold flex items-center justify-center text-base font-bold">
+            <i class="fa-solid fa-radar"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h2 class="text-base sm:text-lg font-extrabold text-slate-900 dark:text-white">
+                Live Intelligence Dossier: <span id="reportQueryTitle" class="text-brand-emerald dark:text-brand-gold">Query</span>
+              </h2>
+              <span id="reportSourceBadge" class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">Verified + Live Web</span>
+            </div>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Real-time aggregation across Master Registry, Live News RSS, Official Portals, and Global APIs.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button type="button" id="shareReportWhatsAppBtn" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-700 text-white transition-colors">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            <span>Send Brief on WhatsApp</span>
+          </button>
+          <button type="button" id="closeReportBtn" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-colors">
+            <i class="fa-solid fa-xmark"></i>
+            <span>Close Report</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 3-Column Live Intelligence Breakdown -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+        <!-- COLUMN 1: Official Department / Visa / Scheme Specifications & Checklist -->
+        <div class="lg:col-span-2 space-y-5">
+          <!-- Primary Verified Card or Dynamic Encyclopedia Synthesis -->
+          <div id="primaryDossierCard" class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm space-y-5">
+            <!-- Populated dynamically -->
+          </div>
+
+          <!-- Country & Live Currency / University Explorer (Shown automatically if query matches a country or global education) -->
+          <div id="countryLiveBox" class="hidden bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm space-y-4">
+            <!-- Populated via REST Countries + OpenAlex Universities + ExchangeRate API -->
+          </div>
+        </div>
+
+        <!-- COLUMN 2: Real-Time Live News, Job Alerts & Policy Updates Feed -->
+        <div class="space-y-5">
+          <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-500 animate-pulse"></span>
+                <h3 class="text-xs font-extrabold uppercase tracking-wider text-slate-800 dark:text-slate-100">
+                  Live News, Jobs &amp; Policy Feed
+                </h3>
+              </div>
+              <button type="button" id="refreshLiveFeedBtn" class="text-xs font-bold text-brand-emerald dark:text-brand-gold hover:underline">
+                <i class="fa-solid fa-rotate mr-1"></i>Refresh
+              </button>
+            </div>
+            <div id="liveNewsFeedList" class="space-y-3 max-h-[520px] overflow-y-auto pr-1">
+              <!-- Populated live from Google News RSS2JSON -->
+            </div>
+          </div>
+
+          <!-- Direct Official Portal Quick-Jump Links -->
+          <div class="bg-slate-900 text-white rounded-2xl p-5 border border-brand-gold/30 space-y-3">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-brand-gold flex items-center gap-2">
+              <i class="fa-solid fa-Up-right-from-square"></i>
+              <span>Deep Official Search Gateways</span>
+            </h3>
+            <p class="text-[11px] text-slate-300">Jump straight to official `.gov.pk` notifications, gazettes, and forms for this exact topic:</p>
+            <div id="officialSearchGateways" class="space-y-2 pt-1"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== MASTER ZERO-SKIP DIRECTORY (10 MACRO SECTORS) ==================== -->
+    <section class="space-y-5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <h2 class="text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-building-columns text-brand-emerald dark:text-brand-gold"></i>
+            <span>Pakistan Sarkari, Neem-Sarkari &amp; Global Master Directory</span>
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400">Click any category tab or department card to pull its complete requirements, portal link, required documents, and live news feed.</p>
+        </div>
+
+        <!-- Live Visa-Sponsored Overseas Jobs Toggle -->
+        <button type="button" id="loadLiveOverseasJobsBtn" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-colors self-start sm:self-auto">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>Fetch Live Visa-Sponsored Overseas Jobs</span>
+        </button>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div id="sectorTabsBar" class="flex items-center gap-2 overflow-x-auto pb-2">
+        <!-- Populated dynamically -->
+      </div>
+
+      <!-- Live Overseas Jobs Drawer (Hidden until clicked) -->
+      <div id="liveOverseasJobsBox" class="hidden bg-indigo-950/95 text-white rounded-2xl p-5 sm:p-6 border border-indigo-400/30 space-y-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-indigo-300">Live Global API Feed (Arbeitnow Europe &amp; Remote)</span>
+            <h3 class="text-base font-extrabold">Real-Time Visa-Sponsored &amp; International Job Openings</h3>
+          </div>
+          <button type="button" id="closeOverseasJobsBtn" class="text-indigo-200 hover:text-white p-1">
+            <i class="fa-solid fa-xmark text-lg"></i>
+          </button>
+        </div>
+        <div id="overseasJobsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5"></div>
+      </div>
+
+      <!-- Directory Cards Grid -->
+      <div id="directoryGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Admin Custom Rule / Alert Modal -->
+  <div id="adminModal" class="hidden fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-slate-900 rounded-2xl max-w-lg w-full border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden">
+      <div class="px-6 py-4 bg-brand-emerald text-white flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-bolt text-brand-gold"></i>
+          <h3 class="font-bold text-sm sm:text-base">Add New Department, Scheme, or Live Rule Alert</h3>
+        </div>
+        <button type="button" id="closeAdminModalBtn" class="text-white/80 hover:text-white p-1">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <form id="addCustomEntryForm" class="p-6 space-y-4 text-xs">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold mb-1">Idara / Scheme / Visa Name</label>
+            <input type="text" id="custTitle" required placeholder="e.g. Punjab Solar Panel Scheme" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700" />
+          </div>
+          <div>
+            <label class="block font-bold mb-1">Sector Category</label>
+            <select id="custSector" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 font-semibold">
+              <option value="health_vaccine">Vaccines, Medical &amp; Health</option>
+              <option value="welfare_labor">EOBI, WWF, BISP &amp; Welfare</option>
+              <option value="utilities">WAPDA, MEPCO, Gas &amp; Utilities</option>
+              <option value="district_revenue">PLRA, Tehsil, UC &amp; Domicile</option>
+              <option value="police_courts">Police, FIA, Licensing &amp; Courts</option>
+              <option value="tax_trade_tenders">FBR, SECP, PSW, Tenders &amp; Trade</option>
+              <option value="overseas_hajj">Protector, OEC, Passport &amp; Hajj</option>
+              <option value="loans_subsidies">Loans, Kissan Card, Banks &amp; Housing</option>
+              <option value="jobs_forces">FPSC, PPSC, PAEC, Forces &amp; Jobs</option>
+              <option value="edu_visas">Global Visas, Scholarships &amp; HEC/IBCC</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold mb-1">Official Portal URL</label>
+            <input type="url" id="custUrl" required placeholder="https://cmsolarscheme.punjab.gov.pk" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 font-mono ltr-num" dir="ltr" />
+          </div>
+          <div>
+            <label class="block font-bold mb-1">Fee / Challan / Stipend Info</label>
+            <input type="text" id="custFee" required placeholder="e.g. Free Registration via 8800 SMS" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700" />
+          </div>
+        </div>
+        <div>
+          <label class="block font-bold mb-1">Eligibility &amp; Latest Rule Summary</label>
+          <textarea id="custDesc" rows="2" required placeholder="Enter latest eligibility rules, quota, or process..." class="w-full p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700"></textarea>
+        </div>
+        <div>
+          <label class="block font-bold mb-1">Required Documents (comma separated)</label>
+          <input type="text" id="custDocs" required placeholder="CNIC Copy, Electricity Reference Number, Mobile SIM in Own Name" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700" />
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" id="cancelAdminModalBtn" class="px-4 py-2 rounded-xl font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Cancel</button>
+          <button type="submit" class="px-5 py-2 rounded-xl font-bold bg-brand-emerald text-white hover:bg-brand-emeraldLight">Save to Portal Registry</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 max-w-sm w-full pointer-events-none"></div>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 mt-12 py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+        <span class="font-bold text-slate-700 dark:text-slate-200">AL GHADEER DIGITAL SERVICES (SMC-PRIVATE) LIMITED</span>
+        <span>&bull; Multan Road, Near THQ Hospital, Chowk Azam</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span><i class="fa-solid fa-satellite-dish text-brand-emerald dark:text-brand-gold mr-1"></i>Connected to Live RSS, Forex, Wikipedia &amp; OpenAlex APIs</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== APPLICATION LOGIC ==================== -->
+  <script>
+    // =========================================================================
+    // 1. 10 MACRO SECTORS & COMPREHENSIVE PAKISTAN + GLOBAL MASTER REGISTRY
+    // =========================================================================
+    const SECTORS = [
+      { id: 'all', label: 'All Sectors', icon: 'fa-solid fa-layer-group' },
+      { id: 'health_vaccine', label: 'Vaccines, NIMS & Medical', icon: 'fa-solid fa-syringe' },
+      { id: 'welfare_labor', label: 'EOBI, WWF, BISP & Welfare', icon: 'fa-solid fa-hand-holding-heart' },
+      { id: 'utilities', label: 'WAPDA, MEPCO, Gas & PTA', icon: 'fa-solid fa-bolt' },
+      { id: 'district_revenue', label: 'PLRA Fard, Tehsil & UC', icon: 'fa-solid fa-landmark' },
+      { id: 'police_courts', label: 'Police, Driving, FIA & Courts', icon: 'fa-solid fa-shield-halved' },
+      { id: 'tax_trade_tenders', label: 'FBR, SECP, PSW & e-Tenders', icon: 'fa-solid fa-file-signature' },
+      { id: 'overseas_hajj', label: 'Protector, OEC, Passport & Hajj', icon: 'fa-solid fa-plane-departure' },
+      { id: 'loans_subsidies', label: 'Kissan Card, Loans & Housing', icon: 'fa-solid fa-seedling' },
+      { id: 'jobs_forces', label: 'FPSC, PPSC, PAEC & Forces', icon: 'fa-solid fa-user-tie' },
+      { id: 'edu_visas', label: 'Global Visas, Scholarships & HEC', icon: 'fa-solid fa-graduation-cap' }
+    ];
+
+    const DEFAULT_REGISTRY = [
+      // 1. VACCINES, NIMS & MEDICAL
+      {
+        id: 'nims-polio',
+        sector: 'health_vaccine',
+        typeBadge: 'Federal Health / Travel Mandatory',
+        title: 'NIMS — Polio, COVID-19 & International Vaccination Certificate',
+        org: 'National Immunization Management System (Ministry of NHSR&C / NADRA)',
+        portalUrl: 'https://nims.nadra.gov.pk/nims/',
+        helpline: '1166 / NADRA Mega Center',
+        feeInfo: 'Rs. 100 NADRA Online Certificate Download Fee (Vaccination free at DHO/THQ)',
+        summary: 'Mandatory oral/inactivated Polio (OPV/IPV) certificate for all Pakistani travelers flying abroad (must be administered at least 4 weeks before travel and valid for 1 year). Also issues Yellow Fever, Meningitis (Umrah/Hajj), and COVID-19 immunization certificates.',
+        docs: ['Original CNIC / B-Form', 'Valid Pakistani Passport', 'Hospital / THQ EPI Vaccination Card Record', 'Debit/Credit Card or e-Sahulat Token for Rs. 100 NIMS Fee'],
+        steps: [
+          'Visit nearest THQ/DHQ Hospital EPI Counter to get Polio/Meningitis dose entered in NIMS portal.',
+          'Open nims.nadra.gov.pk and enter CNIC + Passport Number.',
+          'Pay Rs. 100 online or via NADRA e-Sahulat and download QR-verified International Certificate.'
+        ],
+        keywords: 'nims polio vaccine certificate nadra immunization umrah meningitis covid travel health thq hospital'
+      },
+      {
+        id: 'yellow-fever-nih',
+        sector: 'health_vaccine',
+        typeBadge: 'International Travel Health',
+        title: 'Yellow Fever & Meningococcal Vaccine (Africa / South America / Hajj)',
+        org: 'Directorate of Central Health Establishments (CHE) & NIH Pakistan',
+        portalUrl: 'https://www.nih.org.pk',
+        helpline: '+92-51-9255097',
+        feeInfo: 'Official Government Tariff at Designated Port/Airport Health Offices',
+        summary: 'Required for travelers heading to or transiting through Yellow Fever endemic countries in Africa and South America, and ACWY135 Meningococcal vaccine required at least 10 days before Umrah/Hajj departure.',
+        docs: ['Original Passport (minimum 6 months validity)', 'Original CNIC', '2 Passport-size photographs', 'Flight itinerary / Visa copy'],
+        steps: [
+          'Visit designated International Health Center (Karachi, Lahore, Islamabad Airport/Port Health Office).',
+          'Get vaccinated at least 10 days prior to departure.',
+          'Collect stamped International Certificate of Vaccination or Prophylaxis (ICVP Yellow Booklet).'
+        ],
+        keywords: 'yellow fever vaccine meningitis umrah hajj africa brazil travel health nih che'
+      },
+      {
+        id: 'wafid-gamca',
+        sector: 'health_vaccine',
+        typeBadge: 'Gulf Work & Family Visa Medical',
+        title: 'Wafid (Formerly GAMCA) — GCC Medical Appointment & Fit Report',
+        org: 'Gulf Health Council (Saudi Arabia, UAE, Qatar, Oman, Kuwait, Bahrain)',
+        portalUrl: 'https://wafid.com',
+        helpline: 'Online Wafid Support Portal',
+        feeInfo: '$10 USD Online Slip Booking Fee + Medical Center Test Fee (~Rs. 24,000 - 28,000)',
+        summary: 'Compulsory pre-departure medical examination for work, residency, and family joining visas to GCC countries. Automatically assigns an approved medical center in Multan, Lahore, Islamabad, Karachi, or Peshawar.',
+        docs: ['Original Passport', 'Original CNIC', 'Visa Number & Sponsor/MOFA Details (for Saudi Arabia)', '4 White-background Passport Photos'],
+        steps: [
+          'Generate official medical slip on wafid.com using Passport details and pay $10 booking fee.',
+          'Visit the auto-assigned GCC Medical Center within slip validity (30 days).',
+          'Check live FIT / UNFIT medical status on wafid.com/medical-status-search/.'
+        ],
+        keywords: 'wafid gamca medical slip saudi uae oman qatar kuwait bahrain work visa fit status'
+      },
+      {
+        id: 'iom-uk-tb',
+        sector: 'health_vaccine',
+        typeBadge: 'UK / Canada / Australia Visa Medical',
+        title: 'IOM Pakistan — UK TB Screening & Canada/Australia Immigration Medical',
+        org: 'International Organization for Migration (IOM Migration Health Assessment)',
+        portalUrl: 'https://mymedical.iom.int',
+        helpline: '+92-51-111-466-472',
+        feeInfo: 'USD $85 - $150 (Payable in PKR at designated bank / center)',
+        summary: 'Mandatory Tuberculosis (TB) chest X-ray screening for anyone applying for a UK Study, Work, or Family visa longer than 6 months, as well as panel physician medicals for Canada, Australia, and New Zealand.',
+        docs: ['Original Passport', 'Original CNIC / B-Form', 'UK/Canada/Australia Address & Postcode', 'Prior Medical / Vaccination Records'],
+        steps: [
+          'Book online appointment via mymedical.iom.int for Islamabad, Lahore, Karachi, or Mirpur.',
+          'Appear physically with original passport for chest X-ray and physician check.',
+          'Collect same-day or next-day UK TB Clearance Certificate (valid for 6 months).'
+        ],
+        keywords: 'iom medical uk tb test certificate canada australia visa medical appointment'
+      },
+
+      // 2. WELFARE, LABOR, EOBI, WWF, BISP
+      {
+        id: 'eobi-pension',
+        sector: 'welfare_labor',
+        typeBadge: 'Neem-Sarkari / Labor Pension',
+        title: 'EOBI — Employees Old-Age Benefits Institution (Pension & Survivor Grant)',
+        org: 'Ministry of Overseas Pakistanis & Human Resource Development',
+        portalUrl: 'https://www.eobi.gov.pk',
+        helpline: '0800-03624',
+        feeInfo: 'No Claim Fee for Workers (Monthly Minimum Pension Rs. 10,000+)',
+        summary: 'Provides monthly life-long Old-Age Pension (at age 60 for men, 55 for women with 15+ years insurable employment), Invalidity Pension, Survivors Pension for widows/orphans, and Old-Age Grant.',
+        docs: ['EOBI Registration Card (PE-03) / Facsimile', 'Original CNIC of Insured Person', 'Employer Service Certificates', 'Bank Account IBAN / Bank Alfalah Wallet Details'],
+        steps: [
+          'Check insured employment contribution history on eobi.gov.pk using CNIC or EOBI Number.',
+          'Submit Pension Claim Form (PI-02) at the regional EOBI Field Office.',
+          'Complete biometric verification to start receiving monthly pension.'
+        ],
+        keywords: 'eobi pension old age grant widow survivor pension check cnic registration'
+      },
+      {
+        id: 'wwf-grants',
+        sector: 'welfare_labor',
+        typeBadge: 'Sarkari / Workers Welfare',
+        title: 'WWF — Workers Welfare Fund (Marriage Grant, Death Grant & Talent Scholarship)',
+        org: 'Federal & Provincial Workers Welfare Fund / Boards (PWWB)',
+        portalUrl: 'https://wwf.gov.pk',
+        helpline: '+92-51-9204556',
+        feeInfo: '100% Free Govt Grant (Marriage Grant: Rs. 200,000 to 400,000 | Death Grant: Rs. 600,000 to 800,000)',
+        summary: 'Financial grants for industrial/establishment workers registered under EOBI or Social Security (PESSI/SESSI): Daughter Marriage Grant, Worker Death Grant, and 100% Free Higher Education Talent Scholarships (uniform, books, hostel, laptop & stipend).',
+        docs: ['Worker CNIC & Factory/Company Service Certificate', 'EOBI / Social Security Registration Proof', 'NADRA Nikahnama (for Marriage Grant within 1 year of marriage) or Death Certificate', 'Factory Registration under Factories Act'],
+        steps: [
+          'Obtain verified WWF/PWWB Grant Form or apply via Provincial Workers Welfare Portal.',
+          'Attach employer attestation, EOBI/PESSI history, and NADRA certificate.',
+          'Submit at District Directorate of Labor Welfare for cheque/IBAN disbursement.'
+        ],
+        keywords: 'wwf pwwb shadi marriage grant death grant talent scholarship mazdoor labor social security pessi'
+      },
+      {
+        id: 'bisp-8171',
+        sector: 'welfare_labor',
+        typeBadge: 'Federal Social Protection',
+        title: 'BISP 8171 — Benazir Kafalat, Taleemi Wazaif & Dynamic NSER Survey',
+        org: 'Benazir Income Support Programme (Federal Govt)',
+        portalUrl: 'https://8171.bisp.gov.pk',
+        helpline: '0800-26477',
+        feeInfo: '100% Free Registration at BISP Tehsil Office',
+        summary: 'Quarterly cash assistance for low-PMT score families, plus Benazir Taleemi Wazaif quarterly stipends for school/college children (70%+ attendance) and Benazir Nashonuma for pregnant/lactating mothers.',
+        docs: ['Original CNIC of Female Head of Household', 'NADRA Child B-Form (CRC) with Mother CNIC linked', 'Registered Mobile Number', 'Electricity/Gas Bill (if available for Dynamic Survey)'],
+        steps: [
+          'Check CNIC eligibility and payment status online at 8171.bisp.gov.pk or via SMS to 8171.',
+          'Visit BISP Tehsil Dynamic Registration Desk with CNIC and children B-Form.',
+          'For Taleemi Wazaif, get school admission slip verified by Headmaster.'
+        ],
+        keywords: 'bisp 8171 benazir kafalat taleemi wazaif nser survey pmt score rashan'
+      },
+      {
+        id: 'bait-ul-maal',
+        sector: 'welfare_labor',
+        typeBadge: 'Federal Welfare Aid',
+        title: 'Pakistan Bait-ul-Maal (PBM) — Critical Medical Aid, University Fee & Wheelchairs',
+        org: 'Pakistan Bait-ul-Maal (Cabinet Division)',
+        portalUrl: 'https://www.pbm.gov.pk',
+        helpline: '0800-55544',
+        feeInfo: 'Free Welfare Grant for Deserving Citizens',
+        summary: 'Covers major hospital treatment expenses (cancer, cardiac, dialysis, cochlear implants at govt hospitals), university tuition assistance for needy students, and assistive devices (wheelchairs/hearing aids) for Persons with Disabilities.',
+        docs: ['CNIC Copy', 'Plain Paper Application to MD PBM', 'Government Hospital Doctor Estimate (for Medical Aid) or Public University Fee Structure', 'Non-Taxpayer / Income Affidavit'],
+        steps: [
+          'Get treatment estimate from a panel Government Hospital (e.g. Nishtar, PIMS, Mayo) or University.',
+          'Submit application at District Pakistan Bait-ul-Maal Office.',
+          'Track file status online on pbm.gov.pk.'
+        ],
+        keywords: 'bait ul maal pbm medical aid cancer heart treatment scholarship wheelchair'
+      },
+
+      // 3. UTILITIES (WAPDA, MEPCO, DISCOs, SNGPL, PTA)
+      {
+        id: 'mepco-enc',
+        sector: 'utilities',
+        typeBadge: 'Neem-Sarkari / Electricity DISCO',
+        title: 'MEPCO & All DISCOs (ENC) — New Electricity Meter, Load Change & Net-Metering',
+        org: 'Multan Electric Power Company (MEPCO) & PITC ENC Portal',
+        portalUrl: 'https://www.enc.com.pk',
+        helpline: '118 / 0800-63726',
+        feeInfo: 'Demand Notice as per Single-Phase / 3-Phase Load & Cable Distance',
+        summary: 'Centralized Electricity New Connection (ENC) system for MEPCO (South Punjab including Multan, Layyah, Chowk Azam, Muzaffargarh, DG Khan, Bahawalpur), LESCO, FESCO, IESCO, GEPCO, PESCO, HESCO, SEPCO, QESCO: apply for domestic, commercial, industrial, tube-well connections, name/tariff change, or Solar Net-Metering.',
+        docs: ['Property Ownership Proof (Fard / Registry / Allotment Letter)', 'Applicant CNIC Copy + 2 Witness CNICs', 'Neighbour Nearest Electricity Bill Copy', 'Undertaking on Stamp Paper & Wiring Test Report'],
+        steps: [
+          'Open enc.com.pk and click "Apply New Connection" (select MEPCO or your DISCO).',
+          'Upload ownership documents, neighbour reference number, and print application form.',
+          'Pay generated Demand Notice at designated bank/e-Pay and track meter installation.'
+        ],
+        keywords: 'mepco lesco fesco iesco gepco pesco wapda new meter connection demand notice duplicate bill solar net metering'
+      },
+      {
+        id: 'sngpl-gas',
+        sector: 'utilities',
+        typeBadge: 'Neem-Sarkari / Gas Utility',
+        title: 'SNGPL & SSGC — RLNG / New Gas Connection, Duplicate Bill & Name Change',
+        org: 'Sui Northern Gas Pipelines Limited (SNGPL)',
+        portalUrl: 'https://www.sngpl.com.pk',
+        helpline: '1199',
+        feeInfo: 'Official RLNG Security & Service Line Charges',
+        summary: 'Online portal for domestic and commercial RLNG gas connections, urgent processing, consumer name/address change, and duplicate billing across Punjab, KP, and Islamabad.',
+        docs: ['CNIC Copy', 'Property Registry / Fard', 'Nearest Neighbour SNGPL Consumer Number'],
+        steps: [
+          'Apply online at sngpl.com.pk under Consumer Services -> New Connection.',
+          'Wait for site survey and Demand Notice issuance.',
+          'Submit security deposit to get meter queued.'
+        ],
+        keywords: 'sngpl ssgc sui gas new connection rlng meter bill'
+      },
+      {
+        id: 'pta-dirbs',
+        sector: 'utilities',
+        typeBadge: 'Federal Telecom Regulator',
+        title: 'PTA DIRBS — Mobile IMEI Tax Registration & Overseas Passport Discount',
+        org: 'Pakistan Telecommunication Authority (PTA) & FBR',
+        portalUrl: 'https://dirbs.pta.gov.pk/drs',
+        helpline: '0800-55055',
+        feeInfo: 'FBR Customs Duty & Tax (PSID generated per Phone Model — Passport vs CNIC Rate)',
+        summary: 'Register imported mobile phones via *8484# or DIRBS web portal. Overseas travelers can register 1 phone on Passport within 60 days of arrival in Pakistan to avail approximately 20% lower FBR tax.',
+        docs: ['15-Digit Phone IMEI Number (dial *#06#)', 'Applicant CNIC Number', 'Passport Number (if arrived from abroad within last 60 days)'],
+        steps: [
+          'Dial *8484# or sign up on dirbs.pta.gov.pk/drs.',
+          'Enter CNIC (and Passport number for travel discount) + 15-digit IMEI(s).',
+          'Pay the 17-digit FBR PSID slip via any bank app, JazzCash, or Easypaisa.'
+        ],
+        keywords: 'pta dirbs mobile tax imei registration 8484 fbr psid passport'
+      },
+
+      // 4. DISTRICT, TEHSIL, PLRA & MUNICIPAL
+      {
+        id: 'plra-zameen',
+        sector: 'district_revenue',
+        typeBadge: 'Provincial Land Revenue',
+        title: 'PLRA (Punjab Land Records Authority) — Online Fard, Intiqal & e-Stamping',
+        org: 'Board of Revenue Punjab / Arazi Record Centers (Pulse & e-Stamping)',
+        portalUrl: 'https://www.punjab-zameen.gov.pk',
+        helpline: '042-111-222-272',
+        feeInfo: 'Official Govt Fard Fee (~Rs. 150 - 500) + e-Stamp Duty as per DC / FBR Valuation',
+        summary: 'Obtain verified Digital Fard (for Record or Sale), check Khewat/Khatooni ownership, book Arazi Record Center appointments, verify Mutation (Intiqal), and generate non-judicial/judicial e-Stamp papers.',
+        docs: ['Owner CNIC Number', 'District, Tehsil, and Mauza (Village) Name', 'Khewat / Khatooni or Khasra Number'],
+        steps: [
+          'Log in to punjab-zameen.gov.pk or Pulse Punjab Portal.',
+          'Select District (e.g. Layyah), Tehsil (Chobara / Karor / Layyah), and Mauza.',
+          'For Stamp Papers, generate 32-A Challan on estamping.punjab.gov.pk and pay via e-Pay Punjab.'
+        ],
+        keywords: 'plra fard intiqal mutation arazi record center e-stamp paper zameen khewat gardawari'
+      },
+      {
+        id: 'ekhidmat-domicile-uc',
+        sector: 'district_revenue',
+        typeBadge: 'District & Union Council Services',
+        title: 'e-Khidmat & Union Council (CRMS) — Domicile, Birth, Marriage, Death & Arms License',
+        org: 'e-Khidmat Markaz / Local Government & Community Development (LG&CD)',
+        portalUrl: 'https://ekhidmat.punjab.gov.pk',
+        helpline: '0800-09100',
+        feeInfo: 'Domicile Challan Rs. 200 | NADRA UC Certificates Rs. 100 - 500',
+        summary: 'Apply for Form P-I Domicile Certificate, Computerized Birth Certificate, NADRA Marriage Registration Certificate (MRC), Death Certificate, Character Verification, and Home Dept Arms License.',
+        docs: ['Applicant CNIC / B-Form', 'Educational Certificates (Matric/FA)', 'Utility Bill & Residence Verification by Lumberdar/UC Secretary', '2 Passport Photographs'],
+        steps: [
+          'Track or apply via ekhidmat.punjab.gov.pk or visit District e-Khidmat Center / Union Council.',
+          'Pay e-Pay Punjab PSID fee.',
+          'Complete biometric verification and collect QR-coded certificate.'
+        ],
+        keywords: 'domicile birth certificate marriage certificate mrc death certificate union council ekhidmat arms license'
+      },
+
+      // 5. POLICE, DRIVING, FIA & COURTS
+      {
+        id: 'pkm-police-dlims',
+        sector: 'police_courts',
+        typeBadge: 'Police & Licensing',
+        title: 'Police Khidmat Markaz & DLIMS — Police Character Certificate & International Driving License',
+        org: 'Punjab Police (PKM) & Traffic Police DLIMS 2.0',
+        portalUrl: 'https://dlims.punjab.gov.pk',
+        helpline: '1787 / 15',
+        feeInfo: 'Police Character Certificate Rs. 500 | Learner Permit Rs. 500 | Regular/Intl License per schedule',
+        summary: 'Apply online or at Police Khidmat Markaz for Overseas Police Character Certificate (mandatory for Study/Work/Immigration Visas), Online Learner Driving Permit, Regular License Renewal, and International Driving Permit (IDP).',
+        docs: ['Original CNIC', 'Passport Copy & Visa/Offer Letter (for Overseas Police Character Certificate)', 'Valid Pakistani Driving License (for International Driving Permit)'],
+        steps: [
+          'For Learner/Renewal Driving License, register directly on dlims.punjab.gov.pk and pay PSID.',
+          'For Police Character Certificate, visit pkm.punjab.gov.pk or nearest Police Khidmat Markaz.',
+          'Receive verified digital PDF with QR verification within 3 working days.'
+        ],
+        keywords: 'police character certificate khidmat markaz dlims driving license learner international driving permit'
+      },
+      {
+        id: 'mtmis-excise',
+        sector: 'police_courts',
+        typeBadge: 'Excise & Vehicle Taxation',
+        title: 'MTMIS & e-Pay Excise — Online Vehicle Verification, Biometric Transfer & Token Tax',
+        org: 'Excise, Taxation & Narcotics Control Department',
+        portalUrl: 'https://mtmis.excise.punjab.gov.pk',
+        helpline: '0800-08786',
+        feeInfo: 'Engine CC Based Token Tax & Transfer Fee via e-Pay Punjab',
+        summary: 'Verify any motorcycle, car, or commercial vehicle (Mazda/Truck) registration online, generate e-Pay token tax or biometric ownership transfer PSID, and check smart registration card dispatch status.',
+        docs: ['Vehicle Registration Number (e.g. LEB-20-1234)', 'Buyer & Seller CNICs (for Biometric Transfer at NADRA e-Sahulat)', 'Original Vehicle File / Smart Card'],
+        steps: [
+          'Verify vehicle ownership and chassis details at mtmis.excise.punjab.gov.pk.',
+          'Generate Transfer Challan on e-Pay Punjab app and pay online.',
+          'Perform Buyer and Seller thumb biometric at any NADRA e-Sahulat point.'
+        ],
+        keywords: 'mtmis excise vehicle verification token tax biometric transfer smart card car bike'
+      },
+
+      // 6. TAX, CORPORATE, IMPORT/EXPORT & TENDERS
+      {
+        id: 'fbr-secp-psw',
+        sector: 'tax_trade_tenders',
+        typeBadge: 'Federal Corporate & Trade',
+        title: 'FBR IRIS, SECP eZfile & PSW (Pakistan Single Window Import/Export License)',
+        org: 'FBR, Securities & Exchange Commission (SECP) & Pakistan Single Window',
+        portalUrl: 'https://iris.fbr.gov.pk',
+        helpline: '051-111-772-772',
+        feeInfo: 'FBR NTN Free | SECP SMC/Pvt Ltd ~Rs. 2,200+ | PSW Subscription Rs. 500',
+        summary: 'Complete business registration ecosystem: FBR NTN (Form 181) & Active Taxpayer List (ATL) filing, SECP SMC-Private / Private Limited incorporation, and PSW (psw.gov.pk) Customs Import/Export WeBOC Trader Subscription.',
+        docs: ['Director/Owner CNIC, Active SIM & Email', 'Business Office Address & Utility Bill', 'Bank Maintenance Certificate (with IBAN for PSW Import/Export)', 'Chamber of Commerce Membership (optional)'],
+        steps: [
+          'Register NTN and file annual Income Tax Return on iris.fbr.gov.pk.',
+          'Incorporate company via secp.gov.pk (eZfile) toauto-sync corporate NTN.',
+          'For Import/Export, subscribe on psw.gov.pk using FBR NTN, pay Rs. 500 PSID, and complete NADRA biometric.'
+        ],
+        keywords: 'fbr iris ntn tax return atl secp ezfile company registration psw pakistan single window weboc import export'
+      },
+      {
+        id: 'epads-ppra-tenders',
+        sector: 'tax_trade_tenders',
+        typeBadge: 'Government Procurement & Tenders',
+        title: 'EPADS (PPRA) — e-Pak Acquisition & Disposal System (Federal & Provincial Govt Tenders)',
+        org: 'Public Procurement Regulatory Authority (PPRA Federal & Punjab)',
+        portalUrl: 'https://eprocure.gov.pk',
+        helpline: '+92-51-9205728',
+        feeInfo: 'Free Supplier e-Registration on EPADS Portal',
+        summary: 'Mandatory electronic procurement portal for contractors, suppliers, IT firms, and general order suppliers bidding on Federal and Provincial government tenders, civil works, supply orders, and consultancy contracts.',
+        docs: ['FBR Active NTN & GST / PRA Registration', 'SECP Incorporation Certificate / Firm Registry', 'PEC License (for Engineering/Construction Works)', 'Company Bank Account & Bid Security CDR'],
+        steps: [
+          'Create Supplier/Contractor account on eprocure.gov.pk using FBR NTN.',
+          'Upload company profile, tax certificates, and financial audit reports.',
+          'Browse live active government tenders and submit encrypted e-Bids online.'
+        ],
+        keywords: 'epads ppra government tenders e-procurement contractor supplier pec license bidding'
+      },
+
+      // 7. OVERSEAS, PROTECTOR, OEC, PASSPORT & HAJJ
+      {
+        id: 'beoe-protector-oec',
+        sector: 'overseas_hajj',
+        typeBadge: 'Ministry of Overseas Pakistanis',
+        title: 'BEOE Protector Stamp & OEC (Govt-to-Govt Jobs in South Korea EPS, Japan, Saudi & Italy)',
+        org: 'Bureau of Emigration & Overseas Employment (BEOE) & Overseas Employment Corporation (OEC)',
+        portalUrl: 'https://beoe.gov.pk',
+        helpline: '+92-51-9253164',
+        feeInfo: 'Direct Protector Total Fee ~Rs. 7,200 (incl. OPF Rs. 2,000, State Life Insurance Rs. 2,500, Reg Fee Rs. 2,500, OEC Rs. 200)',
+        summary: 'Mandatory Emigration Protector clearance before flying on any Work Visa ( prevents FIA offloading at airport), plus OEC (oec.gov.pk) official government quota jobs for South Korea EPS-TOPIK, Japan TITP/SSW, Saudi Ministries, and nursing/engineering roles.',
+        docs: ['Original Passport & CNIC', 'Work Visa / E-Visa & Employment Contract / Offer Letter', 'Wafid/GAMCA Medical Fit Report (for GCC)', 'Police Character Certificate & Next-of-Kin CNIC (for State Life Insurance)'],
+        steps: [
+          'For Govt Overseas Jobs, apply directly at oec.gov.pk and pay Rs. 500 - 1,000 OEC challan.',
+          'Once work visa is issued, fill online Direct Emigrant Registration at beoe.gov.pk.',
+          'Appear at Regional Protectorate of Emigrants (Multan / Lahore / Rawalpindi) for thumb biometric and passport sticker.'
+        ],
+        keywords: 'beoe protector stamp emigration oec korea eps japan jobs work visa fia offloading opf insurance'
+      },
+      {
+        id: 'dgip-epassport-hajj',
+        sector: 'overseas_hajj',
+        typeBadge: 'Interior & Religious Affairs',
+        title: 'DGI&P Online e-Passport Renewal & Ministry of Religious Affairs (Pak Hajj Portal)',
+        org: 'Directorate General of Immigration & Passports / Ministry of Religious Affairs',
+        portalUrl: 'https://onlinemrp.dgip.gov.pk',
+        helpline: '051-111-344-777',
+        feeInfo: '36-Page 5-Year Normal Rs. 4,500 | Urgent Rs. 7,500 | e-Passport Rs. 9,000+',
+        summary: 'Apply online for passport renewal, pay passport fees via Asaan Mobile App (Passport Fee Asaan), and check Government Hajj Scheme balloting, vaccination, and flight schedules.',
+        docs: ['Valid CNIC / NICOP', 'Existing Passport (for renewal)', 'Biometric Fingerprint Scan Sheet (for online renewal)', 'White Background Photo'],
+        steps: [
+          'Generate PSID fee via "Passport Fee Asaan" app before visiting Regional Passport Office.',
+          'Or apply completely online for renewal via onlinemrp.dgip.gov.pk.',
+          'Track passport printing and dispatch via SMS 9988.'
+        ],
+        keywords: 'passport renewal e-passport dgip passport fee asaan hajj scheme umrah ministry of religious affairs'
+      },
+
+      // 8. LOANS, SUBSIDIES, AGRICULTURE & HOUSING
+      {
+        id: 'kissan-tractor-acag',
+        sector: 'loans_subsidies',
+        typeBadge: 'Provincial & Federal Subsidies',
+        title: 'CM Kissan Card, Green Tractor Scheme, Apni Chhat Apna Ghar & PM Youth Loan',
+        org: 'Government of Punjab (AC&AG / Agriculture Dept) & PM Youth Program',
+        portalUrl: 'https://acag.punjab.gov.pk',
+        helpline: '0800-09100',
+        feeInfo: 'Apni Chhat Apna Ghar: Up to Rs. 1.5 Million Interest-Free Housing Loan | Green Tractor: Rs. 1 Million Subsidy',
+        summary: 'Flagship government citizen schemes: Apni Chhat Apna Ghar (acag.punjab.gov.pk) interest-free loan for 1-5 Marla urban / 1-10 Marla rural plot owners; CM Green Tractor & Kissan Card (agripunjab.gov.pk) for computerized PLRA landholders; and PM Youth Business & Agriculture Loan (pmyp.gov.pk).',
+        docs: ['Applicant CNIC & PMT Score Verification', 'Computerized PLRA Fard / Land Ownership Record', 'Mobile SIM registered on Applicant CNIC', '2 Passport Photos & Residence Proof'],
+        steps: [
+          'For Housing Loan, register on acag.punjab.gov.pk with plot ownership proof.',
+          'For Business/Startup Loan (Tier 1 up to Rs. 500,000 interest-free), apply at pmyp.gov.pk.',
+          'For Kissan Card / Tractor Subsidy, verify PLRA land record and apply via Agriculture Department portal.'
+        ],
+        keywords: 'apni chhat apna ghar kissan card green tractor scheme pm youth loan ztbl solar panel subsidy'
+      },
+
+      // 9. RECRUITMENT COMMISSIONS & STRATEGIC BODIES
+      {
+        id: 'fpsc-ppsc-paec-jobs',
+        sector: 'jobs_forces',
+        typeBadge: 'Sarkari & Strategic Recruitment',
+        title: 'FPSC, PPSC, PAEC (Atomic Energy / PublicJob), Punjab Job Portal & Armed Forces',
+        org: 'Federal & Provincial Commissions, Strategic Plans Division & Defence',
+        portalUrl: 'https://www.ppsc.gop.pk',
+        helpline: '042-99202762',
+        feeInfo: 'PPSC Online e-Pay Fee Rs. 600 | FPSC Rs. 300 - 1,500 | PAEC Free Online Apply',
+        summary: 'Centralized recruitment portals for BPS-01 to BPS-20 regular and contract posts: PPSC (ppsc.gop.pk), FPSC (fpsc.gov.pk), Atomic Energy PAEC/NESCOM/KRL (publicjob.pk / careerjobs1737.com), Punjab Job Portal (jobs.punjab.gov.pk), and Pak Army/Navy/PAF.',
+        docs: ['CNIC & Domicile Certificate', 'Verified Academic Transcripts (Matric, FA/FSc, BS/MA)', 'PEC/PMDC/PNC Registration (for technical cadres)', 'Passport Size Digital Photo (< 30 KB)'],
+        steps: [
+          'Check active Consolidated Advertisements on ppsc.gop.pk, fpsc.gov.pk, or publicjob.pk.',
+          'Generate e-Pay PSID or Treasury Challan and submit online form before closing date.',
+          'Download Roll Number Slip and check Merit Lists online.'
+        ],
+        keywords: 'ppsc fpsc spsc kppsc paec atomic energy publicjob nescom krl pak army navy paf punjab job portal'
+      },
+
+      // 10. GLOBAL VISAS, SCHOLARSHIPS, HEC, IBCC & ATTESTATION
+      {
+        id: 'hec-ibcc-mofa-wes',
+        sector: 'edu_visas',
+        typeBadge: 'Attestation & Global Visas / Scholarships',
+        title: 'HEC, IBCC, MOFA Apostille, WES / Anabin & Global Scholarships (CSC, Erasmus, Germany, UK)',
+        org: 'Higher Education Commission, IBCC, Foreign Office (MOFA) & International Portals',
+        portalUrl: 'https://eservices.hec.gov.pk',
+        helpline: '051-111-119-432',
+        feeInfo: 'HEC Rs. 1,000/original + Rs. 700/copy | IBCC Rs. 1,200/certificate | Apostille MOFA per slab',
+        summary: 'Complete pathway for international admissions, scholarships (China CSC, Germany DAAD & Chancenkarte Opportunity Card, Italy Universitaly DSU, Hungary Stipendium, UK Chevening), and mandatory document chain: BISE Board Verification -> IBCC -> HEC -> MOFA / Apostille -> Foreign Embassy / WES / DataFlow.',
+        docs: ['Original Matric & Inter Certificates (Sealed BISE Verification for IBCC)', 'Original University Degrees & Transcripts', 'CNIC & Passport Copy', 'English Proficiency (IELTS / PTE / University MOI Certificate)'],
+        steps: [
+          'Get Matric/FA verified online from relevant BISE Board and book IBCC appointment (attest.ibcc.edu.pk).',
+          'Create profile on eservices.hec.gov.pk for University Degree attestation.',
+          'Book MOFA / Apostille courier or walk-in slot (apostille.mofa.gov.pk) for international legal validity.'
+        ],
+        keywords: 'hec attestation ibcc mofa apostille wes dataflow csc china scholarship germany chancenkarte italy visa uk study visa'
+      }
+    ];
+
+    // =========================================================================
+    // 2. APPLICATION STATE & LIVE FOREX ENGINE
+    // =========================================================================
+    const appState = {
+      activeSector: 'all',
+      searchQuery: '',
+      queriesCount: 0,
+      darkMode: false,
+      registry: [...DEFAULT_REGISTRY],
+      forexRates: { USD: 278.5, SAR: 74.2, AED: 75.8, EUR: 301.0, GBP: 353.0, CAD: 202.0, AUD: 183.0, CNY: 38.6 },
+      currentReportSummaryText: ''
+    };
+
+    function initStorageAndTheme() {
+      try {
+        const customRaw = localStorage.getItem('ag_intel_custom_entries_v1');
+        if (customRaw) {
+          const parsed = JSON.parse(customRaw);
+          if (Array.isArray(parsed)) {
+            appState.registry = [...parsed, ...DEFAULT_REGISTRY];
+          }
+        }
+        const savedTheme = localStorage.getItem('ag_intel_theme');
+        if (savedTheme === 'dark') {
+          appState.darkMode = true;
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {}
+      updateThemeIcon();
+    }
+
+    function updateThemeIcon() {
+      const icon = document.getElementById('themeIcon');
+      if (icon) {
+        icon.className = appState.darkMode ? 'fa-solid fa-sun text-sm text-brand-gold' : 'fa-solid fa-moon text-sm';
+      }
+    }
+
+    function showToast(msg, type = 'success') {
+      const container = document.getElementById('toastContainer');
+      if (!container) return;
+      const el = document.createElement('div');
+      const cls = type === 'error'
+        ? 'bg-rose-600 text-white'
+        : type === 'info'
+        ? 'bg-slate-800 text-white'
+        : 'bg-brand-emerald text-white border border-brand-gold/40';
+      el.className = `pointer-events-auto flex items-center gap-2.5 px-4 py-3 rounded-xl shadow-lg text-xs font-bold ${cls}`;
+      el.innerHTML = `<i class="fa-solid ${type === 'error' ? 'fa-circle-exclamation' : 'fa-circle-check text-brand-gold'}"></i><span>${msg}</span>`;
+      container.appendChild(el);
+      setTimeout(() => {
+        el.style.opacity = '0';
+        setTimeout(() => el.remove(), 220);
+      }, 3000);
+    }
+
+    async function fetchLiveForexRates() {
+      try {
+        const res = await fetch('https://open.er-api.com/v6/latest/USD');
+        if (!res.ok) return;
+        const data = await res.json();
+        if (data && data.rates && data.rates.PKR) {
+          const pkrPerUsd = data.rates.PKR;
+          appState.forexRates.USD = pkrPerUsd;
+          appState.forexRates.SAR = pkrPerUsd / (data.rates.SAR || 3.75);
+          appState.forexRates.AED = pkrPerUsd / (data.rates.AED || 3.67);
+          appState.forexRates.EUR = pkrPerUsd / (data.rates.EUR || 0.92);
+          appState.forexRates.GBP = pkrPerUsd / (data.rates.GBP || 0.79);
+          appState.forexRates.CAD = pkrPerUsd / (data.rates.CAD || 1.38);
+          appState.forexRates.AUD = pkrPerUsd / (data.rates.AUD || 1.52);
+          appState.forexRates.CNY = pkrPerUsd / (data.rates.CNY || 7.20);
+        }
+      } catch (e) {
+        // Fallback rates remain active if offline
+      }
+      const u = document.getElementById('fxUsd');
+      const s = document.getElementById('fxSar');
+      const eu = document.getElementById('fxEur');
+      const g = document.getElementById('fxGbp');
+      if (u) u.textContent = `USD: Rs.${appState.forexRates.USD.toFixed(1)}`;
+      if (s) s.textContent = `SAR: Rs.${appState.forexRates.SAR.toFixed(1)}`;
+      if (eu) eu.textContent = `EUR: Rs.${appState.forexRates.EUR.toFixed(1)}`;
+      if (g) g.textContent = `GBP: Rs.${appState.forexRates.GBP.toFixed(1)}`;
+    }
+
+    // =========================================================================
+    // 3. SECTOR TABS & MASTER DIRECTORY RENDERING
+    // =========================================================================
+    function renderSectorTabs() {
+      const bar = document.getElementById('sectorTabsBar');
+      if (!bar) return;
+      bar.innerHTML = '';
+      SECTORS.forEach(sec => {
+        const isAct = appState.activeSector === sec.id;
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = isAct
+          ? 'px-3.5 py-2 rounded-xl text-xs font-bold bg-brand-emerald text-white shadow-sm shrink-0 flex items-center gap-1.5'
+          : 'px-3.5 py-2 rounded-xl text-xs font-bold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-brand-emerald shrink-0 flex items-center gap-1.5';
+        btn.innerHTML = `<i class="${sec.icon} ${isAct ? 'text-brand-gold' : 'text-brand-emerald dark:text-brand-gold'}"></i><span>${sec.label}</span>`;
+        btn.addEventListener('click', () => {
+          appState.activeSector = sec.id;
+          renderSectorTabs();
+          renderDirectoryGrid();
+        });
+        bar.appendChild(btn);
+      });
+    }
+
+    function renderDirectoryGrid() {
+      const grid = document.getElementById('directoryGrid');
+      if (!grid) return;
+      const q = appState.searchQuery.trim().toLowerCase();
+
+      const filtered = appState.registry.filter(item => {
+        const catOk = appState.activeSector === 'all' || item.sector === appState.activeSector;
+        const qOk = !q ||
+          item.title.toLowerCase().includes(q) ||
+          item.org.toLowerCase().includes(q) ||
+          item.summary.toLowerCase().includes(q) ||
+          (item.keywords && item.keywords.toLowerCase().includes(q));
+        return catOk && qOk;
+      });
+
+      grid.innerHTML = '';
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 text-center space-y-3">
+            <p class="text-sm font-bold text-slate-800 dark:text-slate-200">
+              "${appState.searchQuery}" is not in the static cards — click below to pull its <strong>Live Real-Time Dossier, Official Portals &amp; News</strong>!
+            </p>
+            <button type="button" id="triggerDynamicSearchFromEmptyBtn" class="px-5 py-2.5 rounded-xl text-xs font-bold bg-brand-emerald text-white hover:bg-brand-emeraldLight">
+              <i class="fa-solid fa-bolt mr-1.5 text-brand-gold"></i>Run Live Deep Search for "${appState.searchQuery}"
+            </button>
+          </div>
+        `;
+        const b = document.getElementById('triggerDynamicSearchFromEmptyBtn');
+        if (b) b.addEventListener('click', () => executeUniversalLiveSearch(appState.searchQuery));
+        return;
+      }
+
+      filtered.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'card-hover bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-brand-emerald dark:hover:border-brand-gold shadow-sm flex flex-col justify-between gap-4';
+        card.innerHTML = `
+          <div class="space-y-3">
+            <div class="flex items-center justify-between gap-2">
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-50 text-brand-emerald dark:bg-emerald-950/70 dark:text-emerald-300 border border-emerald-200/70 dark:border-emerald-800">
+                ${item.typeBadge}
+              </span>
+              <a href="${item.portalUrl}" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold text-brand-emerald dark:text-brand-gold hover:underline flex items-center gap-1" title="Open Official Website">
+                <span>Official Portal</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              </a>
+            </div>
+            <div>
+              <h3 class="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white leading-snug">${item.title}</h3>
+              <p class="text-[11px] font-semibold text-slate-500 dark:text-slate-400 mt-0.5">${item.org}</p>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">${item.summary}</p>
+            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200/70 dark:border-slate-700 text-[11px]">
+              <span class="font-bold text-slate-700 dark:text-slate-200"><i class="fa-solid fa-receipt text-brand-emerald dark:text-brand-gold mr-1"></i>Fee / Benefit:</span>
+              <span class="text-slate-600 dark:text-slate-300 ml-1">${item.feeInfo}</span>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between gap-2">
+            <button type="button" data-open-dossier="${item.id}" class="flex-1 py-2 px-3 rounded-xl text-xs font-bold bg-brand-emerald hover:bg-brand-emeraldLight text-white transition-colors flex items-center justify-center gap-1.5">
+              <i class="fa-solid fa-satellite-dish text-brand-gold"></i>
+              <span>Open Full Details &amp; Live News</span>
+            </button>
+          </div>
+        `;
+        card.querySelector('[data-open-dossier]').addEventListener('click', () => {
+          openRegistryItemDossier(item);
+        });
+        grid.appendChild(card);
+      });
+    }
+
+    // =========================================================================
+    // 4. UNIVERSAL ZERO-SKIP LIVE INTELLIGENCE ENGINE
+    // =========================================================================
+    async function executeUniversalLiveSearch(rawQuery) {
+      const q = (rawQuery || '').trim();
+      if (!q) {
+        showToast('Please enter a department, scheme, vaccine, or country name', 'error');
+        return;
+      }
+
+      appState.queriesCount += 1;
+      document.getElementById('statQueriesCount').textContent = String(appState.queriesCount);
+
+      const reportSec = document.getElementById('liveReportSection');
+      reportSec.classList.remove('hidden');
+      document.getElementById('reportQueryTitle').textContent = q;
+      reportSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      // 1. Check if query matches any item in our verified Registry
+      const qLower = q.toLowerCase();
+      const matchedRegistryItem = appState.registry.find(item =>
+        item.title.toLowerCase().includes(qLower) ||
+        item.org.toLowerCase().includes(qLower) ||
+        (item.keywords && item.keywords.toLowerCase().split(' ').some(k => k.length > 2 && qLower.includes(k)))
+      );
+
+      if (matchedRegistryItem) {
+        renderVerifiedDossierCard(matchedRegistryItem);
+      } else {
+        // Dynamic Live Knowledge Synthesis via Wikipedia/MediaWiki API + Official Gateway Builder
+        await fetchAndRenderDynamicKnowledgeDossier(q);
+      }
+
+      // 2. Render Official .gov.pk & Global Search Gateways
+      renderOfficialGateways(q, matchedRegistryItem);
+
+      // 3. Fetch Live News, Jobs & Policy Updates via RSS2JSON (Google News RSS)
+      fetchLiveNewsForQuery(q);
+
+      // 4. Check if query involves a Country or Foreign Visa/University -> Fetch Live Country + Forex + Universities
+      checkAndFetchCountryAndUniversityIntel(q);
+    }
+
+    function openRegistryItemDossier(item) {
+      appState.queriesCount += 1;
+      document.getElementById('statQueriesCount').textContent = String(appState.queriesCount);
+
+      const reportSec = document.getElementById('liveReportSection');
+      reportSec.classList.remove('hidden');
+      document.getElementById('reportQueryTitle').textContent = item.title;
+      reportSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      renderVerifiedDossierCard(item);
+      renderOfficialGateways(item.title, item);
+      fetchLiveNewsForQuery(item.title.split('—')[0].trim() + ' Pakistan');
+      document.getElementById('countryLiveBox').classList.add('hidden');
+    }
+
+    function renderVerifiedDossierCard(item) {
+      const container = document.getElementById('primaryDossierCard');
+      document.getElementById('reportSourceBadge').textContent = 'Verified Registry + Live Web Feed';
+
+      appState.currentReportSummaryText = `*${item.title}*\nOrganization: ${item.org}\nOfficial Portal: ${item.portalUrl}\nFee/Benefit: ${item.feeInfo}\n\n*Required Documents:*\n- ${(item.docs || []).join('\n- ')}\n\nShared via Al Ghadeer Digital Services (Chowk Azam)`;
+
+      container.innerHTML = `
+        <div class="flex flex-wrap items-start justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
+          <div>
+            <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-50 text-brand-emerald dark:bg-emerald-950 dark:text-emerald-300">${item.typeBadge}</span>
+            <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white mt-2">${item.title}</h3>
+            <p class="text-xs font-semibold text-slate-500 dark:text-slate-400">${item.org} &bull; Helpline: <span class="font-mono ltr-num" dir="ltr">${item.helpline || 'Official Portal'}</span></p>
+          </div>
+          <a href="${item.portalUrl}" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl text-xs font-bold bg-brand-emerald hover:bg-brand-emeraldLight text-white shadow-sm flex items-center gap-2">
+            <span>Open Official Portal</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">${item.summary}</p>
+
+        <div class="p-4 rounded-xl bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/70 text-xs">
+          <span class="font-extrabold text-amber-900 dark:text-amber-300 block mb-1"><i class="fa-solid fa-coins mr-1.5"></i>Official Fee, Challan or Grant Amount:</span>
+          <span class="text-slate-800 dark:text-slate-200 font-medium">${item.feeInfo}</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-2.5">
+            <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-700 dark:text-slate-200 flex items-center gap-1.5">
+              <i class="fa-solid fa-clipboard-check text-brand-emerald dark:text-brand-gold"></i>
+              <span>Required Documents Checklist</span>
+            </h4>
+            <ul class="space-y-1.5 text-xs text-slate-600 dark:text-slate-300">
+              ${(item.docs || []).map(d => `<li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5 shrink-0"></i><span>${d}</span></li>`).join('')}
+            </ul>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-2.5">
+            <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-700 dark:text-slate-200 flex items-center gap-1.5">
+              <i class="fa-solid fa-list-ol text-brand-emerald dark:text-brand-gold"></i>
+              <span>Step-by-Step Application Process</span>
+            </h4>
+            <ol class="space-y-1.5 text-xs text-slate-600 dark:text-slate-300">
+              ${(item.steps || []).map((s, idx) => `<li class="flex items-start gap-2"><span class="font-bold text-brand-emerald dark:text-brand-gold ltr-num" dir="ltr">${idx + 1}.</span><span>${s}</span></li>`).join('')}
+            </ol>
+          </div>
+        </div>
+      `;
+    }
+
+    async function fetchAndRenderDynamicKnowledgeDossier(query) {
+      const container = document.getElementById('primaryDossierCard');
+      document.getElementById('reportSourceBadge').textContent = 'Live Dynamic Encyclopedia + Gov Gateway';
+
+      container.innerHTML = `
+        <div class="flex items-center gap-3 py-8 justify-center text-xs font-bold text-slate-500">
+          <i class="fa-solid fa-circle-notch fa-spin text-brand-emerald text-lg"></i>
+          <span>Querying Live Knowledge Databases &amp; Official Portal Index for "${query}"...</span>
+        </div>
+      `;
+
+      let wikiTitle = query;
+      let wikiExtract = '';
+      let wikiUrl = `https://www.google.com/search?q=${encodeURIComponent(query + ' official portal Pakistan')}`;
+
+      try {
+        const searchUrl = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query + ' Pakistan')}&utf8=&format=json&origin=*`;
+        const res = await fetch(searchUrl);
+        const data = await res.json();
+        if (data && data.query && data.query.search && data.query.search.length > 0) {
+          const topHit = data.query.search[0];
+          wikiTitle = topHit.title;
+          const summaryRes = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wikiTitle)}`);
+          if (summaryRes.ok) {
+            const sumData = await summaryRes.json();
+            wikiExtract = sumData.extract || '';
+            if (sumData.content_urls && sumData.content_urls.desktop) {
+              wikiUrl = sumData.content_urls.desktop.page;
+            }
+          }
+        }
+      } catch (e) {
+        // Fallback synthesis if Wikipedia is unreachable
+      }
+
+      if (!wikiExtract) {
+        wikiExtract = `Live intelligence profile generated for "${query}". Use the verified .gov.pk official gateways on the right and the live news feed to inspect the latest notifications, forms, fee schedules, and eligibility criteria.`;
+      }
+
+      appState.currentReportSummaryText = `*Live Intelligence Brief: ${query}*\nOverview: ${wikiExtract}\nOfficial Gov Search: https://www.google.com/search?q=${encodeURIComponent(query + ' site:gov.pk')}\n\nShared via Al Ghadeer Digital Services (Chowk Azam)`;
+
+      container.innerHTML = `
+        <div class="flex flex-wrap items-start justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-4">
+          <div>
+            <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-sky-50 text-sky-700 dark:bg-sky-950 dark:text-sky-300">Live Dynamic Knowledge Synthesis</span>
+            <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white mt-2">${wikiTitle}</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Matched for query: "${query}"</p>
+          </div>
+          <a href="https://www.google.com/search?q=${encodeURIComponent(query + ' official portal site:gov.pk OR site:org.pk')}" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl text-xs font-bold bg-brand-emerald hover:bg-brand-emeraldLight text-white shadow-sm flex items-center gap-2">
+            <span>Locate Official .gov.pk Portal</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">${wikiExtract}</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-2">
+            <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-700 dark:text-slate-200">
+              <i class="fa-solid fa-clipboard-list text-brand-emerald dark:text-brand-gold mr-1.5"></i>Standard Required Documents
+            </h4>
+            <ul class="space-y-1.5 text-xs text-slate-600 dark:text-slate-300">
+              <li>&bull; Original CNIC / NADRA B-Form &amp; Attested Copies</li>
+              <li>&bull; Domicile / PRC Certificate (for Provincial Quotas)</li>
+              <li>&bull; Relevant Academic / Service / Ownership Certificates</li>
+              <li>&bull; Paid Bank Challan / e-Pay Punjab PSID Receipt</li>
+            </ul>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-2">
+            <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-700 dark:text-slate-200">
+              <i class="fa-solid fa-link text-brand-emerald dark:text-brand-gold mr-1.5"></i>Reference Links
+            </h4>
+            <p class="text-xs text-slate-600 dark:text-slate-300">Read the live news feed on the right for the latest 2026 advertisements, deadline extensions, and policy updates for <strong>${query}</strong>.</p>
+            <a href="${wikiUrl}" target="_blank" rel="noopener noreferrer" class="inline-block text-xs font-bold text-brand-emerald dark:text-brand-gold hover:underline">
+              View Reference Record <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+            </a>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderOfficialGateways(query, matchedItem) {
+      const box = document.getElementById('officialSearchGateways');
+      if (!box) return;
+      const enc = encodeURIComponent(query);
+      const links = [
+        {
+          label: 'Search All .gov.pk Official Portals',
+          url: `https://www.google.com/search?q=${enc}+site:gov.pk`,
+          icon: 'fa-solid fa-building-flag'
+        },
+        {
+          label: 'Latest Application Forms & PDF Notifications',
+          url: `https://www.google.com/search?q=${enc}+form+OR+notification+filetype:pdf`,
+          icon: 'fa-solid fa-file-pdf'
+        },
+        {
+          label: 'Latest Jobs, Eligibility & Advertisements',
+          url: `https://www.google.com/search?q=${enc}+jobs+OR+scheme+2026+Pakistan`,
+          icon: 'fa-solid fa-bullhorn'
+        }
+      ];
+      if (matchedItem && matchedItem.portalUrl) {
+        links.unshift({
+          label: `Direct Portal: ${matchedItem.portalUrl.replace(/^https?:\/\//, '').split('/')[0]}`,
+          url: matchedItem.portalUrl,
+          icon: 'fa-solid fa-globe'
+        });
+      }
+
+      box.innerHTML = links.map(l => `
+        <a href="${l.url}" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-white transition-colors border border-slate-700">
+          <span class="flex items-center gap-2 truncate"><i class="${l.icon} text-brand-gold"></i><span class="truncate">${l.label}</span></span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 shrink-0"></i>
+        </a>
+      `).join('');
+    }
+
+    // =========================================================================
+    // 5. LIVE NEWS & POLICY RSS ENGINE (GOOGLE NEWS RSS -> JSON)
+    // =========================================================================
+    async function fetchLiveNewsForQuery(query) {
+      const listEl = document.getElementById('liveNewsFeedList');
+      if (!listEl) return;
+
+      listEl.innerHTML = `
+        <div class="py-8 text-center text-xs text-slate-400 space-y-2">
+          <i class="fa-solid fa-spinner fa-spin text-brand-emerald text-lg"></i>
+          <p>Fetching live news, advertisements &amp; policy updates for "${query}"...</p>
+        </div>
+      `;
+
+      try {
+        const rssUrl = `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=en-PK&gl=PK&ceid=PK:en`;
+        const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
+        const res = await fetch(apiUrl);
+        if (!res.ok) throw new Error('RSS service busy');
+        const data = await res.json();
+
+        if (!data.items || data.items.length === 0) {
+          throw new Error('No immediate RSS items');
+        }
+
+        listEl.innerHTML = data.items.slice(0, 8).map(item => {
+          const pubDate = item.pubDate ? item.pubDate.split(' ')[0] : 'Live';
+          return `
+            <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="block p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 hover:bg-emerald-50/60 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-colors space-y-1.5">
+              <div class="flex items-center justify-between text-[10px] font-mono text-slate-400 ltr-num" dir="ltr">
+                <span class="text-brand-emerald dark:text-brand-gold font-bold">LIVE UPDATE</span>
+                <span>${pubDate}</span>
+              </div>
+              <h4 class="text-xs font-bold text-slate-800 dark:text-slate-100 leading-snug">${item.title}</h4>
+            </a>
+          `;
+        }).join('');
+      } catch (err) {
+        // Clean fallback with direct live Google News search links if RSS proxy rate-limits
+        listEl.innerHTML = `
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-3 text-xs">
+            <p class="text-slate-600 dark:text-slate-300 font-medium">
+              Open real-time news &amp; official notifications for <strong>${query}</strong> directly:
+            </p>
+            <a href="https://news.google.com/search?q=${encodeURIComponent(query)}&hl=en-PK&gl=PK&ceid=PK%3Aen" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-brand-emerald text-white font-bold flex items-center justify-center gap-2">
+              <i class="fa-solid fa-newspaper"></i>
+              <span>Open Live Google News Feed</span>
+            </a>
+          </div>
+        `;
+      }
+    }
+
+    // =========================================================================
+    // 6. LIVE COUNTRY VISA, CURRENCY & 100,000+ UNIVERSITY API ENGINE
+    // =========================================================================
+    async function checkAndFetchCountryAndUniversityIntel(rawQuery) {
+      const box = document.getElementById('countryLiveBox');
+      if (!box) return;
+
+      // Clean common words like "visa", "scholarship", "jobs", "study", "work" to isolate country name
+      const cleanedCountryCandidate = rawQuery
+        .replace(/\b(visa|scholarship|scholarships|study|work|permit|jobs|admission|universities|university|embassy|rules|in|for)\b/gi, '')
+        .trim();
+
+      if (!cleanedCountryCandidate || cleanedCountryCandidate.length < 3) {
+        box.classList.add('hidden');
+        return;
+      }
+
+      try {
+        const cRes = await fetch(`https://restcountries.com/v3.1/name/${encodeURIComponent(cleanedCountryCandidate)}`);
+        if (!cRes.ok) {
+          box.classList.add('hidden');
+          return;
+        }
+        const cData = await cRes.json();
+        if (!Array.isArray(cData) || cData.length === 0) {
+          box.classList.add('hidden');
+          return;
+        }
+
+        const country = cData[0];
+        const countryName = country.name?.common || cleanedCountryCandidate;
+        const capital = (country.capital && country.capital[0]) || 'N/A';
+        const region = country.subregion || country.region || 'Global';
+        const currenciesObj = country.currencies || {};
+        const currCode = Object.keys(currenciesObj)[0] || 'USD';
+        const currName = currenciesObj[currCode]?.name || currCode;
+        const flagUrl = country.flags?.svg || country.flags?.png || '';
+
+        // Fetch live conversion from USD/PKR for this currency
+        let pkrRate = appState.forexRates[currCode] || null;
+        if (!pkrRate) {
+          try {
+            const fxRes = await fetch(`https://open.er-api.com/v6/latest/${currCode}`);
+            if (fxRes.ok) {
+              const fxJson = await fxRes.json();
+              if (fxJson?.rates?.PKR) pkrRate = fxJson.rates.PKR;
+            }
+          } catch (e) {}
+        }
+
+        // Fetch top Universities in this country from OpenAlex Live API
+        let uniListHtml = '';
+        try {
+          const uniRes = await fetch(`https://api.openalex.org/institutions?search=${encodeURIComponent(countryName)}&per-page=6`);
+          if (uniRes.ok) {
+            const uniData = await uniRes.json();
+            if (uniData.results && uniData.results.length > 0) {
+              uniListHtml = uniData.results.map(u => `
+                <a href="${u.homepage_url || ('https://www.google.com/search?q=' + encodeURIComponent(u.display_name))}" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 hover:border-brand-emerald flex items-center justify-between gap-2 text-xs">
+                  <div class="min-w-0">
+                    <p class="font-bold text-slate-900 dark:text-white truncate">${u.display_name}</p>
+                    <p class="text-[11px] text-slate-500 ltr-num" dir="ltr">Research Works: ${(u.works_count || 0).toLocaleString()}</p>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-brand-emerald dark:text-brand-gold shrink-0"></i>
+                </a>
+              `).join('');
+            }
+          }
+        } catch (e) {}
+
+        const estBankStatementPkr = pkrRate ? `Rs. ${Math.round(11000 * (appState.forexRates.USD || 278.5)).toLocaleString()} (~$11,000 USD Equiv.)` : ' Approx. Rs. 3.0M - 4.5M';
+
+        box.classList.remove('hidden');
+        box.innerHTML = `
+          <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800 pb-4">
+            <div class="flex items-center gap-3">
+              ${flagUrl ? `<img src="${flagUrl}" alt="${countryName}" class="w-12 h-8 object-cover rounded shadow-sm border border-slate-200" />` : ''}
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-brand-emerald dark:text-brand-gold">Live Country &amp; Visa Intelligence (REST Countries + Forex API)</span>
+                <h3 class="text-base sm:text-lg font-extrabold text-slate-900 dark:text-white">${countryName} — Capital: ${capital} (${region})</h3>
+              </div>
+            </div>
+            <div class="px-3.5 py-2 rounded-xl bg-emerald-50 dark:bg-emerald-950/70 border border-emerald-200 dark:border-emerald-800 text-xs font-mono font-bold text-brand-emerald dark:text-brand-gold ltr-num" dir="ltr">
+              1 ${currCode} (${currName}) = ${pkrRate ? 'Rs. ' + pkrRate.toFixed(2) + ' PKR' : 'Live Rate Active'}
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+            <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+              <span class="text-slate-500 block">Standard Study/Visit Bank Statement</span>
+              <strong class="text-slate-900 dark:text-white font-mono ltr-num" dir="ltr">${estBankStatementPkr}</strong>
+            </div>
+            <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+              <span class="text-slate-500 block">Mandatory Pakistani Attestations</span>
+              <strong class="text-slate-900 dark:text-white">IBCC + HEC + MOFA Apostille</strong>
+            </div>
+            <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+              <span class="text-slate-500 block">Health &amp; Security Clearances</span>
+              <strong class="text-slate-900 dark:text-white">NIMS Polio + Police Character Cert</strong>
+            </div>
+          </div>
+
+          ${uniListHtml ? `
+            <div class="space-y-2.5 pt-2">
+              <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-600 dark:text-slate-300 flex items-center gap-1.5">
+                <i class="fa-solid fa-building-columns text-brand-emerald dark:text-brand-gold"></i>
+                <span>Top Verified Universities &amp; Portals in ${countryName} (Live OpenAlex Database)</span>
+              </h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">${uniListHtml}</div>
+            </div>
+          ` : ''}
+        `;
+      } catch (e) {
+        box.classList.add('hidden');
+      }
+    }
+
+    // =========================================================================
+    // 7. LIVE VISA-SPONSORED OVERSEAS JOBS FEED (ARBEITNOW API)
+    // =========================================================================
+    async function fetchLiveOverseasJobs() {
+      const box = document.getElementById('liveOverseasJobsBox');
+      const grid = document.getElementById('overseasJobsGrid');
+      if (!box || !grid) return;
+
+      box.classList.remove('hidden');
+      grid.innerHTML = `
+        <div class="col-span-full py-6 text-center text-xs text-indigo-200">
+          <i class="fa-solid fa-spinner fa-spin mr-2"></i>Fetching live international &amp; visa-sponsored job listings...
+        </div>
+      `;
+
+      try {
+        const res = await fetch('https://www.arbeitnow.com/api/job-board-api');
+        if (!res.ok) throw new Error('API unreachable');
+        const data = await res.json();
+        const jobs = (data.data || []).slice(0, 6);
+
+        if (jobs.length === 0) throw new Error('Empty feed');
+
+        grid.innerHTML = jobs.map(j => `
+          <a href="${j.url}" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-indigo-900/70 hover:bg-indigo-900 border border-indigo-400/30 flex flex-col justify-between gap-3 transition-colors">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between gap-2 text-[10px] font-bold text-indigo-300">
+                <span class="truncate">${j.company_name}</span>
+                <span class="px-2 py-0.5 rounded bg-indigo-800 text-white shrink-0">${j.remote ? 'Remote / Global' : (j.location || 'Europe')}</span>
+              </div>
+              <h4 class="text-xs sm:text-sm font-extrabold text-white line-clamp-2">${j.title}</h4>
+            </div>
+            <div class="flex items-center justify-between text-[11px] text-indigo-200 pt-2 border-t border-indigo-800/80">
+              <span>Direct Apply</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </a>
+        `).join('');
+      } catch (e) {
+        grid.innerHTML = `
+          <div class="col-span-full p-4 rounded-xl bg-indigo-900/50 text-xs text-indigo-200">
+            Live job feed temporarily busy. You can search any overseas job category (e.g., "OEC Korea Jobs", "Saudi Work Visa", "Germany Opportunity Card") in the main search bar above.
+          </div>
+        `;
+      }
+    }
+
+    // =========================================================================
+    // 8. INITIALIZATION & EVENT LISTENERS
+    // =========================================================================
+    window.addEventListener('DOMContentLoaded', () => {
+      initStorageAndTheme();
+      renderSectorTabs();
+      renderDirectoryGrid();
+      fetchLiveForexRates();
+
+      // Search Input & Form
+      const searchInput = document.getElementById('universalSearchInput');
+      const clearBtn = document.getElementById('clearQueryBtn');
+
+      searchInput.addEventListener('input', e => {
+        appState.searchQuery = e.target.value;
+        clearBtn.classList.toggle('hidden', !appState.searchQuery);
+        renderDirectoryGrid();
+      });
+
+      clearBtn.addEventListener('click', () => {
+        appState.searchQuery = '';
+        searchInput.value = '';
+        clearBtn.classList.add('hidden');
+        renderDirectoryGrid();
+      });
+
+      document.getElementById('universalSearchForm').addEventListener('submit', e => {
+        e.preventDefault();
+        executeUniversalLiveSearch(searchInput.value);
+      });
+
+      // Quick Test Chips
+      document.querySelectorAll('.quick-q-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          const q = chip.getAttribute('data-quick-query');
+          searchInput.value = q;
+          appState.searchQuery = q;
+          clearBtn.classList.remove('hidden');
+          renderDirectoryGrid();
+          executeUniversalLiveSearch(q);
+        });
+      });
+
+      // Report Actions
+      document.getElementById('closeReportBtn').addEventListener('click', () => {
+        document.getElementById('liveReportSection').classList.add('hidden');
+      });
+
+      document.getElementById('refreshLiveFeedBtn').addEventListener('click', () => {
+        const currentTitle = document.getElementById('reportQueryTitle').textContent;
+        if (currentTitle) fetchLiveNewsForQuery(currentTitle);
+      });
+
+      document.getElementById('shareReportWhatsAppBtn').addEventListener('click', () => {
+        const text = appState.currentReportSummaryText || 'Al Ghadeer Live Intelligence Brief';
+        window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+      });
+
+      // Overseas Jobs Drawer
+      document.getElementById('loadLiveOverseasJobsBtn').addEventListener('click', fetchLiveOverseasJobs);
+      document.getElementById('closeOverseasJobsBtn').addEventListener('click', () => {
+        document.getElementById('liveOverseasJobsBox').classList.add('hidden');
+      });
+
+      // Brand Home Reset
+      document.getElementById('brandHomeBtn').addEventListener('click', () => {
+        appState.activeSector = 'all';
+        appState.searchQuery = '';
+        searchInput.value = '';
+        clearBtn.classList.add('hidden');
+        document.getElementById('liveReportSection').classList.add('hidden');
+        renderSectorTabs();
+        renderDirectoryGrid();
+      });
+
+      // Theme Toggle
+      document.getElementById('themeToggleBtn').addEventListener('click', () => {
+        appState.darkMode = !appState.darkMode;
+        document.documentElement.classList.toggle('dark', appState.darkMode);
+        try {
+          localStorage.setItem('ag_intel_theme', appState.darkMode ? 'dark' : 'light');
+        } catch (e) {}
+        updateThemeIcon();
+      });
+
+      // Admin Custom Rule Modal
+      const adminModal = document.getElementById('adminModal');
+      document.getElementById('openAdminModalBtn').addEventListener('click', () => adminModal.classList.remove('hidden'));
+      document.getElementById('closeAdminModalBtn').addEventListener('click', () => adminModal.classList.add('hidden'));
+      document.getElementById('cancelAdminModalBtn').addEventListener('click', () => adminModal.classList.add('hidden'));
+
+      document.getElementById('addCustomEntryForm').addEventListener('submit', e => {
+        e.preventDefault();
+        const newEntry = {
+          id: 'cust_' + Date.now(),
+          sector: document.getElementById('custSector').value,
+          typeBadge: 'Admin Live Rule Alert',
+          title: document.getElementById('custTitle').value.trim(),
+          org: 'Al Ghadeer Verified Update',
+          portalUrl: document.getElementById('custUrl').value.trim(),
+          helpline: 'Official Portal',
+          feeInfo: document.getElementById('custFee').value.trim(),
+          summary: document.getElementById('custDesc').value.trim(),
+          docs: document.getElementById('custDocs').value.split(',').map(s => s.trim()).filter(Boolean),
+          steps: [
+            'Verify eligibility and latest notification on official portal.',
+            'Prepare required documents and fee challan.',
+            'Submit online or visit Al Ghadeer Digital Services (Chowk Azam) for complete filing.'
+          ],
+          keywords: document.getElementById('custTitle').value.toLowerCase()
+        };
+
+        appState.registry.unshift(newEntry);
+        try {
+          const existing = JSON.parse(localStorage.getItem('ag_intel_custom_entries_v1') || '[]');
+          existing.unshift(newEntry);
+          localStorage.setItem('ag_intel_custom_entries_v1', JSON.stringify(existing));
+        } catch (err) {}
+
+        adminModal.classList.add('hidden');
+        e.target.reset();
+        renderDirectoryGrid();
+        openRegistryItemDossier(newEntry);
+        showToast('New Department/Rule added to Portal Registry!');
+      });
+    });
+  </script>
+</body>
+</html>
